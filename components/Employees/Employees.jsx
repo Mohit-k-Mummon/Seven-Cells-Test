@@ -4,7 +4,7 @@ import AddEmployee from './AddEmployee';
 
 const Employees = () => {
 	return (
-		<div className='bg-slate-600 w-[600px] rounded-sm p-10 flex flex-col gap-2'>
+		<div className='bg-slate-600 w-[600px] mt-10 rounded-sm p-10 flex flex-col gap-2'>
 			<Employee />
 			<Employee />
 			<Employee />

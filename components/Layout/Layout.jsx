@@ -5,7 +5,7 @@ const Layout = props => {
 	return (
 		<>
 			<MainNavigation />
-			<main className='w-full bg-slate-100 flex justify-center'>{props.children}</main>
+			<main className='w-full flex justify-center'>{props.children}</main>
 		</>
 	);
 };
