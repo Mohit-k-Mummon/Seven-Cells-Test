@@ -1,27 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+	font-family: 'Roboto Mono', monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/****************** 
+      RESET
+******************/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	transition: 0.3s;
+	overflow-x: hidden;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* Buttons */
+button {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	text-decoration: none;
+}
+
+/* Form reset */
+form,
+input,
+textarea,
+select,
+button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
 }
