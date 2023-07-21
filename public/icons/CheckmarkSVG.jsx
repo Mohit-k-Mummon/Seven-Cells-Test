@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Just returns an SVG
+
 const CheckmarkSVG = props => {
 	return (
 		<svg
