@@ -10,12 +10,12 @@ const employeeData = [
 
 const Employees = () => {
 	return (
-		<div className='bg-slate-600 w-[600px] mt-10 rounded-sm p-10 flex flex-col gap-2'>
+		<section className='bg-slate-600 w-[600px] mt-10 rounded-sm p-10 flex flex-col gap-2'>
 			<Employee />
 			<Employee />
 			<Employee />
 			<AddEmployee />
-		</div>
+		</section>
 	);
 };
 
